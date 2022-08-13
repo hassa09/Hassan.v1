@@ -104,7 +104,6 @@ ul {
 
 
 }
-
 .menubar {
     display: none;
     // margin-right: 1.555rem;
@@ -142,7 +141,6 @@ ul {
 
 
     ul {
-        display: none;
         margin: 0 auto;
         align-items: center;
         flex-direction: column;
@@ -159,10 +157,6 @@ ul {
         }
     }
 
-  
-    // .navbar {
-    //     margin-left: .445rem;
-    // }
 
     .menubar {
     display: flex;
@@ -170,5 +164,38 @@ ul {
     z-index: 0;
     color: $icon-colors;
 
-}
+ }
+
+} 
+
+
+@media (max-width:850px) {
+    ul {
+        margin: 0 auto;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 1rem;
+       li {
+           margin-block: 2rem;
+           a {
+               font-size: 20px;
+               color: rgb(40, 36, 36);
+               font-weight: bolder;
+           }
+       }
+    }
+
+    .menubar {
+        .menu {
+            display: block;
+            margin-right: 0;
+        }
+    }
+
+    .closed{
+        display: none;
+        .close{
+
+        }
+    }
 }
